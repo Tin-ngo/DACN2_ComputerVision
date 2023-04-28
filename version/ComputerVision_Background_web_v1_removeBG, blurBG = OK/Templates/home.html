@@ -1,0 +1,40 @@
+{% extends 'common/layout.html' %}
+{% load static %}
+{% block body %}
+    <!-- thẻ chứa body -->
+    <div id="body">
+        <div class="row body-wrap">
+            <div class="col body-main">
+                <div class="flaxbox" id="select-image-btn">
+                    <img src="{%static 'image/vna_potal_olympic_mua_dong_bac_kinh_2022_my_gianh_hcv_truot_tuyet_tu_do_vuot_doc_va_chuong_ngai_vat_cua_nam_stand.png'%}"
+                        alt="năng lượng tích cực">
+                    <div class="body-main__text">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Chọn ảnh</p>
+                    </div>
+                </div>
+            </div>
+            <div id="image-preview"></div>
+            <div class="col body-intro">
+                <h2>Gỡ bỏ nền</h2>
+                <div class="hr-css"></div>
+                <h4>By TinNgo</h4>
+                <p>
+                    Miễn phí và 100% tự động loại bỏ BG! Bấm một lần nhấp vào Xóa nền tự động chỉ trong vài giây!
+                </p>
+                <p>
+                    Trạng thái nghệ thuật của chúng tôi cho phép bạn xóa nền từ hình ảnh sản phẩm, danh sách thương mại
+                    điện tử, ảnh tự sướng, hình ảnh hồ sơ và những người khác mà không có công việc thủ công cồng kềnh.
+                    Hủy bỏ BG trên một số hình ảnh cùng một lúc, tinh chỉnh kết quả với các công cụ cắt chi tiết của
+                    chúng tôi.
+                </p>
+                <div class="open-photo" id="open-photo">
+                    <!-- <input type="file" name="" id="file-input" style="display: none;"> -->
+                    <span>Chọn ảnh</span>
+                    <!-- <img id="image-preview" src="#" alt="Ảnh xem trước"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
