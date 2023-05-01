@@ -38,18 +38,18 @@ Phần Mềm
             warnings.filterwarnings("ignore", category=UserWarning) 
 
 
-        2. lỗi không cài / import được torch hoặc torchvision
+       ** 2. lỗi không cài / import được torch hoặc torchvision
           do phiên bản python lỗi
           https://www.youtube.com/watch?v=8DiYgiJ2VH8 
-          => cài python phiên bản 3.10.9
+          => cài python phiên bản 3.10.9**
 
         - cài rembg để xóa nền ảnh
           pip install rembg 
 
-        3. Lỗi torch.cuda.is_available()  ra FALSE
+      **  3. Lỗi torch.cuda.is_available()  ra FALSE
           https://stackoverflow.com/questions/60987997/why-torch-cuda-is-available-returns-false-even-after-installing-pytorch-with 
           => Cài đặt PyTorch mà không cần hỗ trợ CUDA (chỉ dành cho CPU)
-          vào trang pytorch và chọn các tùy chọn để có lệnh cài torch, torchvision thích hợp
+          vào trang pytorch và chọn các tùy chọn để có lệnh cài torch, torchvision thích hợp**
 
 
         4. lỗi 'depth' is 6(CV_64F)
